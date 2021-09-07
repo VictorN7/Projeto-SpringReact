@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+:root {
+    --color-primary: #FF8400; /*Variaveis do CSS são declaradas com '--' e o nome em seguida e são chamadas com 'var(--cor-primaria)'*/
+} /* Esse import é feito no google fonts*/
+
+
+html, body {
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+}
+/* background de um texto do bootstrap que agora está laranja */
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+/* cor de texto do bootstrap que foi alterada para o laranja   */
+.text-primary {
+    color: var(--color-primary) !important;
+}
