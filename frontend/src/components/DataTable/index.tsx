@@ -1,9 +1,10 @@
+import 'components/DataTable/style.css';
 
 const DataTable = () => {
     return (
         <div className="table-responsive">
             <table className="table table-striped table-sm">
-                <thead>
+                <thead className="table-config">
                     <tr>
                         <th>Data</th>
                         <th>Vendedor</th>
@@ -12,7 +13,7 @@ const DataTable = () => {
                         <th>Valor</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="table-config">
                     <tr>
                         <td>22/04/2021</td>
                         <td>Barry Allen</td>
