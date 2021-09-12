@@ -1,5 +1,5 @@
-import 'components/DataTable/style.css';
-
+//import './components/DataTable/style.css';
+import '../../components/DataTable/style.css';
 const DataTable = () => {
     return (
         <div className="table-responsive">
