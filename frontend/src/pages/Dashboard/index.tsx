@@ -24,7 +24,7 @@ const Dashboard = () => {
                 <div className="py-3">
                     <h2 className="text-danger">Todas as Vendas</h2>
                 </div>
-                <DataTable />
+                <DataTable/>
             </div>
             <Footer />
         </>

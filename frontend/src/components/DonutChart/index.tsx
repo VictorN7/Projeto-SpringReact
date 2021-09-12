@@ -13,13 +13,13 @@ type CharData = {
 
 const DonutChart = () => {
 
-    // estado = chartData | Função que altera o valor/define do dado = setChartData | 
-    const [chartData, setChartData] = useState<CharData>({ labels:[], series:[]}); 
+    // estado = chartData | Função que altera o valor/define do dado = setChartData |
+    const [chartData, setChartData] = useState<CharData>({ labels:[], series:[]});
     // ARGUMENTOS(qual função quer executar, lista de objetos que o useEfffect vai observar)
     useEffect(() => { 
         axios.get(`${BASE_URL}/sales/amount-by-seller`)
         .then(response => {
-            const data = response.data as SaleSum[]; // Casting da List de Collection da api para o SaleSum do react 
+            const data = response.data as SaleSum[];// Casting da List de Collection da api para o SaleSum do react
             const myLabels = data.map(x => x.sellerName);
             const mySeries = data.map(x => x.sum);
 
