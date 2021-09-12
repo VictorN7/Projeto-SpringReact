@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts';
 import { SaleSum } from '../../types/sale';
 import { BASE_URL } from '../../utils/requests';
@@ -12,19 +13,20 @@ type CharData = {
 
 const DonutChart = () => {
 
-    // Forma errada
-    let chartData :  CharData = { labels:[], series:[]};
-
-    axios.get(`${BASE_URL}/sales/amount-by-seller`)
+    // estado = chartData | Função que altera o valor/define do dado = setChartData | 
+    const [chartData, setChartData] = useState<CharData>({ labels:[], series:[]}); 
+    // ARGUMENTOS(qual função quer executar, lista de objetos que o useEfffect vai observar)
+    useEffect(() => { 
+        axios.get(`${BASE_URL}/sales/amount-by-seller`)
         .then(response => {
             const data = response.data as SaleSum[]; // Casting da List de Collection da api para o SaleSum do react 
             const myLabels = data.map(x => x.sellerName);
             const mySeries = data.map(x => x.sum);
 
-            chartData = { labels:myLabels, series: mySeries};
-
-            console.log(chartData);
+            setChartData({ labels:myLabels, series: mySeries});
         })
+    },[])
+    
     /* const mockData = {
         series: [477138, 499928, 444867, 220426, 473088],
         labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
