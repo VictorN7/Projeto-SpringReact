@@ -1,7 +1,5 @@
 # 🛠Projeto-SpringReact
-Projeto Criado na Semana do Spring React da devsuperior.
-
-- ## Front-End usando ReactJS 💻
+Projeto Criado no evento da Semana do Spring React da devsuperior.
 
 ## Tecnologias utilizadas :
 
