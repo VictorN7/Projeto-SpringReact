@@ -1,5 +1,5 @@
 # 🛠Projeto-SpringReact
-Projeto Criado no evento da Semana do Spring React proporcionado pela DevSuperior e pelo instrutor Nelio Alves.
+Projeto Criado no evento da Semana do Spring React proporcionado pela DevSuperior e pelo instrutor Nélio Alves.
 
 ## Tecnologias utilizadas :
 
@@ -12,7 +12,6 @@ ReactJS, Bootstrap , HTML5, CSS3, Gerenciado de Pacotes NPM, Biblioteca Axios(Re
 
 Java Spring boot, PostgreSQL para o Banco de dados, Sistema de Gerenciamento de Banco de Dados (SGBD) H2 e Deploy na nuvem na plataforma Heroku.
 
- 
 ### Link do projeto na nuvem: https://springreact-victorn7.netlify.app
 
 ---
