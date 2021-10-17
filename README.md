@@ -1,5 +1,5 @@
 # 🛠Projeto-SpringReact
-Projeto Criado no evento da Semana do Spring React da devsuperior.
+Projeto Criado no evento da Semana do Spring React proporcionado pela DevSuperior e pelo instrutor Nelio Alves.
 
 ## Tecnologias utilizadas :
 
